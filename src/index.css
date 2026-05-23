@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page & Header  */
+.page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  background: #05359c;
+  color: #fff;
+  padding: 35px 28px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 6px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subheading {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+/* Grid & Card */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  align-items: start;
+  gap: 10px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.company {
+  font-size: 14px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13.5px;
+  color: #718096;
+}
+
+/* Details & Button */
+.details {
+  background: #f6f8ff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13.5px;
+  color: #12151b;
+  line-height: 1.7;
+}
+
+button {
+  align-self: flex-start;
+  padding: 7px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn-show {
+  background: #05359c;
+}
+.btn-hide {
+  background: #dc2626;
+}
+
+/* Empty State */
+.empty-message {
+  text-align: center;
+  font-size: 18px;
+  color: #718096;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    padding: 20px;
+  }
+}
